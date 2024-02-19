@@ -1,27 +1,25 @@
 <div class="conteiner__big-card">
 
     <div class="big-card__pic">
-        <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Rengar_0.jpg" 
+        <img src="{{ picCover }}" 
         alt="" 
         height="200px"
         width="300px"
         srcset="">
     </div>
 
-    
-
         <div class="big-card__title">
 
-            <h1><a href="#">Rengar, o Feroz Caçador!</a></h1>
+            <h1><a [routerLink]="['content',id]">{{ cardTitle }}</a></h1>
     
         </div>
     
         <div class="big-card__description">
     
             <p>
-
-                É uma figura icônica na mitologia de League of Legends. Nascido nas selvas brutais de Valoran, ele foi criado sob os princípios da sobrevivência mais primitiva. Dotado de uma habilidade de caça incomparável e uma sede insaciável por desafios, Rengar percorre as florestas em busca de suas presas. Contudo, seu destino se entrelaça com o de Kha'Zix, um predador igualmente formidável e astuto. O embate entre esses dois titãs selvagens é um conto épico de rivalidade selvagem, com Rengar buscando provar sua supremacia como o mais temido caçador de todos os tempos.
-
+                <a [routerLink]="['content',id]">
+             {{ cardDescription }}
+                </a>
             </p>
     
         </div>
